@@ -122,9 +122,9 @@ const lastMonth=new Date(lastHolidayTimestamp).getMonth()
 
 const holidayCount = Object.keys(holidays).length; 
 const randomHolidayId = Math.floor(Math.random(holidays) * holidayCount);
-const randomHolidayDate = holidays[randomHolidayId];
+const randomHolidayDate =new Date( holidays[randomHolidayId].date);
 
-console.log(randomHolidayDate);
+console.log(randomHolidayDate.toLocaleDateString('en-GB'));
 
 
 
