@@ -118,7 +118,7 @@ const lastMonth=new Date(lastHolidayTimestamp).getMonth()
 // Get the number of holidays
 // Choose a random holiday ID
 // Get the date of the chosen holiday
-//.Length signifies the number of items in the holidays object
+//.Length check the number of items in the holidays object
 
 const holidayCount = Object.keys(holidays).length; 
 const randomHolidayId = Math.floor(Math.random(holidays) * holidayCount);
