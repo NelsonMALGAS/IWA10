@@ -107,8 +107,6 @@ const lastHolidayTimestamp = Math.max(
    
 );
 
-
-
 const firstDay=new Date(firstHolidayTimestamp).getDate()
 const firstMonth=new Date(firstHolidayTimestamp).getMonth()
 const lastDay= new Date(lastHolidayTimestamp).getDate()
