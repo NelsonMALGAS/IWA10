@@ -78,7 +78,7 @@ console.log('New date is earlier:',false || true)
 if(copied){
     console.log('ID change:',false)
     console.log('Name change:', copied)
-    console.log('Date change:', copied2)
+    console.log('Date change:', copied2.toLocaleDateString('en-GB'))//'en-GB' is the british time zone
 }
 
 const firstHolidayTimestamp = Math.min(
