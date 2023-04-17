@@ -73,13 +73,14 @@ if (isEarlier){
 }else{
     false 
 }
-console.log('New date is earlier:',false || true)// || operator looks for true
+console.log('New date is earlier:',false || true) // || operator looks for true
 
 if(copied){
     console.log('ID change:',false)
     console.log('Name change:', copied)
-    console.log('Date change:', copied2.toLocaleDateString('en-GB'))//'en-GB' is the british time zone
+    console.log('Date change:', copied2.toLocaleDateString('en-GB'))
 }
+/**'en-GB' is  method of the JavaScript Date object that returns a string  in british time zone*/
 
 const firstHolidayTimestamp = Math.min(
     new Date (holidays[0].date).getTime(),
