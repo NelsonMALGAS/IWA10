@@ -112,8 +112,8 @@ const firstMonth=new Date(firstHolidayTimestamp).getMonth()
 const lastDay= new Date(lastHolidayTimestamp).getDate()
 const lastMonth=new Date(lastHolidayTimestamp).getMonth()
 
- console.log(`First holiday:${'0' + firstDay}/${'0'+ ( firstMonth + 1)}/${currentYear}`);
- console.log(`Last holiday:${lastDay}/${lastMonth + 1}/${currentYear}`);
+ console.log(`${'0' + firstDay}/${'0'+ ( firstMonth + 1)}/${currentYear}`);
+ console.log(`${lastDay}/${lastMonth + 1}/${currentYear}`);
 
 // Get the number of holidays
 // Choose a random holiday ID
