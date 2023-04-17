@@ -73,7 +73,7 @@ if (isEarlier){
 }else{
     false 
 }
-console.log('New date is earlier:',false || true)
+console.log('New date is earlier:',false || true)// || operator looks for true
 
 if(copied){
     console.log('ID change:',false)
@@ -119,6 +119,8 @@ const lastMonth=new Date(lastHolidayTimestamp).getMonth()
 // Choose a random holiday ID
 // Get the date of the chosen holiday
 //.Length check the number of items in the holidays object
+
+//Math.floor() rounds a number downwards to the nearest integer.
 
 const holidayCount = Object.keys(holidays).length; 
 const randomHolidayId = Math.floor(Math.random(holidays) * holidayCount);
