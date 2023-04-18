@@ -34,7 +34,7 @@ const holidays = {
     6: {
         id: 6,
         name: 'Christmas Day',
-        date: new Date(`25 December ${currentYear} 13:25`),
+        date: new Date(`25 December ${currentYear} 13:25 `),
     },
     7: {
         id: 7,
@@ -59,26 +59,25 @@ console.log(futureId.name)
     console.log('ID 9 not created yet')
 }
 
-const time=new Date(`25 December ${currentYear}`).getTime(0,0)
-const futureTime=new Date (`25 December ${currentYear}`).getTime(13,25)
 
-copied =holidays[6].name='X-mas'
-copied2=holidays[6].date=new Date(`25 December ${currentYear} ${time}`),
-correctDate = holidays[6].date
-correctTime=time
-isEarlier = futureTime > time 
-
-if (isEarlier){
-    true 
-}else{
-    false 
+copied={
+    6: {
+        id: 6,
+        name: 'X-mas',
+        date: new Date(`25 December ${currentYear} `)
+  }
 }
-console.log('New date is earlier:',false || true) // || operator looks for true
+    
+
+const newTime = new Date(`25 December ${currentYear} 00:00:00`).getTime();
+  const isEarlier = newTime < holidays[6].date.getTime();
+  console.log('New date is earlier:', isEarlier);
+ 
 
 if(copied){
     console.log('ID change:',false)
-    console.log('Name change:', copied)
-    console.log('Date change:', copied2.toLocaleDateString('en-GB'))
+    console.log('Name change:', copied[6].name)
+    console.log('Date change:', copied[6].date.toLocaleDateString('en-GB'))
 }
 /**'en-GB' is  method of the JavaScript Date object that returns a string  in british time zone*/
 
